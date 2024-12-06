@@ -1,0 +1,96 @@
+.timeline-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.timeline-container {
+  position: relative;
+  padding: 1rem;
+  overflow-x: scroll;
+  border: 1px solid #e5e7eb;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.timeline-scroll {
+  position: relative;
+  min-width: max-content;
+}
+
+.timeline-content {
+  position: relative;
+  margin-top: 50px; /* Space for header */
+}
+
+.timeline-event {
+  position: absolute;
+  background-color: #3b82f6;
+  border-radius: 4px;
+  padding: 8px;
+  color: white;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 100px;
+  height: 35px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.timeline-event:hover {
+  background-color: #2563eb;
+}
+
+.timeline-event-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+}
+
+.timeline-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.timeline-header {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+  height: 50px;
+  display: flex;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.timeline-day {
+  position: absolute;
+  top: 35px;
+  font-size: 12px;
+  transform: translateX(-50%);
+  color: #6b7280;
+}
+
+.timeline-month {
+  position: absolute;
+  top: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  white-space: nowrap;
+  color: #374151;
+}
+
+.timeline-grid-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #e5e7eb;
+}

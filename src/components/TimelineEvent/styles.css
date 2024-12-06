@@ -1,0 +1,24 @@
+.event-container {
+  position: absolute;
+  background-color: #3b82f6;
+  border-radius: 4px;
+  padding: 8px;
+  color: white;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 100px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.event-container:hover {
+  background-color: #2563eb;
+}
+
+.event-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+} 
